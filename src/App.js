@@ -2,12 +2,18 @@ import React, { Component } from "react";
 import stefan from "./Stefan.jpg";
 import "./App.css";
 
+class StefanImage extends Component {
+  render() {
+    return <img src={stefan} className="App-logo" alt="logo" />;
+  }
+}
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={stefan} className="App-logo" alt="logo" />
+          <StefanImage />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
